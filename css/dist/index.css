@@ -80,9 +80,8 @@ ul li {
 }
 .tab .tab_contents {
   width: 85%;
-  height: 1200px;
   border: 1px solid #eee;
-  box-shadow: 3px 3px 8px #797777;
+  box-shadow: 3px 3px 8px #555555;
 }
 .tab .tab_contents .content {
   color: #000;
@@ -108,11 +107,12 @@ ul li {
 }
 .tab .tab_contents .subtitle p {
   font-weight: bold;
+  font-size: 20px;
 }
-.tab .tab_contents #resume .timeline-section {
+.tab .tab_contents .timeline-section {
   position: relative;
 }
-.tab .tab_contents #resume .timeline-section:after {
+.tab .tab_contents .timeline-section:after {
   content: "";
   position: absolute;
   top: 0;
@@ -122,10 +122,10 @@ ul li {
   transform: translateX(-50%);
   background-color: #ccc;
 }
-.tab .tab_contents #resume .timeline-section .timeline-pointer {
+.tab .tab_contents .timeline-section .timeline-pointer {
   position: relative;
 }
-.tab .tab_contents #resume .timeline-section .timeline-pointer::before {
+.tab .tab_contents .timeline-section .timeline-pointer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -139,7 +139,7 @@ ul li {
   background-color: #fff;
   z-index: 1;
 }
-.tab .tab_contents #resume .timeline-section .timeline-pointer::after {
+.tab .tab_contents .timeline-section .timeline-pointer:last-child::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -156,5 +156,42 @@ ul li {
   font-weight: bold;
 }
 .tab .tab_contents #resume .itemContent {
-  color: #575555;
+  color: #555555;
+}
+.tab .tab_contents #experience .timeline-section2 {
+  margin-top: 50px;
+  position: relative;
+}
+.tab .tab_contents #experience .timeline-section2:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-50%);
+  background-color: #ccc;
+}
+.tab .tab_contents #experience .timeline-section2 .timeline-pointer {
+  position: relative;
+}
+.tab .tab_contents #experience .timeline-section2 .timeline-pointer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  transform: translateX(-50%);
+  background-color: #fff;
+  z-index: 1;
+}
+.tab .tab_contents #experience .period {
+  color: #555555;
+}
+.tab .tab_contents #skill small {
+  color: #555555;
 }

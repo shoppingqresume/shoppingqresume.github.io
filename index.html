@@ -1,126 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shoppingq</title>
-     <!-- bootstrap -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-     <!-- hover.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shoppingq</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- hover.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <div class="container mt-5">
-      <main class="tab d-flex">
-        <aside class="tab_btns d-flex flex-column">
-          <div class="photo"></div>  
-          <div class="btn hvr-bounce-to-right active">
-              <i class="fas fa-file-alt"></i>
-              <span class="btn-en">Resume</span><span class="btn-ch">履歷</span>
+  <div class="container mt-5">
+    <main class="tab d-flex">
+      <aside class="tab_btns d-flex flex-column">
+        <div class="photo"></div>
+        <div class="btn hvr-bounce-to-right active">
+          <i class="fas fa-file-alt"></i>
+          <span class="btn-en">Resume</span><span class="btn-ch">履歷</span>
+        </div>
+
+        <div class="btn hvr-bounce-to-right">
+          <i class="fas fa-user-tie"></i>
+          <span class="btn-en">About</span><span class="btn-ch">自傳</span>
+        </div>
+        <div class="btn hvr-bounce-to-right">
+          <i class="fas fa-briefcase"></i>
+          <span class="btn-en">Portfolio</span><span class="btn-ch">作品集</span>
+        </div>
+      </aside>
+      <article class="tab_contents py-5">
+        <div class="content active" id="resume">
+          <div class="title text-center">Resume</div>
+          <section class="information">
+            <div class="subtitle text-center">
+              <div class="box mb-3"></div>
+              <p>基本資料</p>
             </div>
-            
-            <div class="btn hvr-bounce-to-right">
-              <i class="fas fa-user-tie"></i>
-              <span class="btn-en">About</span><span class="btn-ch">自傳</span>
-            </div>
-            <div class="btn hvr-bounce-to-right">
-              <i class="fas fa-briefcase"></i>
-              <span class="btn-en">Portfolio</span><span class="btn-ch">作品集</span>
-            </div>
-        </aside>
-        <article class="tab_contents py-5">
-            <div class="content active" id="resume">
-                <div class="title text-center">Resume</div>
-                <section class="information">
-                  <div class="subtitle text-center">
-                    <div class="box mb-3"></div>
-                    <p>基本資料</p>
+            <div class="timeline-section">
+              <div class="timeline-pointer">
+                <div class="row">
+                  <div class="col">
+                    <ul class="item text-right my-4 mr-3">
+                      <li>姓名</li>
+                      <li>出生日期</li>
+                      <li>聯絡電話</li>
+                      <li>電子郵件</li>
+                      <li>通訊地址</li>
+                      <li>兵役</li>
+                    </ul>
                   </div>
-                  <div class="timeline-section">
-                    <div class="timeline-pointer">
-                      <div class="row">
-                        <div class="col">
-                          <ul class="item text-right my-4 mr-3">
-                            <li>姓名</li>
-                            <li>出生日期</li>
-                            <li>聯絡電話</li>
-                            <li>電子郵件</li>
-                            <li>通訊地址</li>
-                            <li>兵役</li>
-                          </ul>
-                        </div>
-                        <div class="col">
-                          <ul class="itemContent my-4 ml-3">
-                            <li>林修平</li>
-                            <li>1982/12/30</li>
-                            <li>0919-035176</li>
-                            <li>shoppingq@gmail.com</li>
-                            <li>臺中市太平區中源街2巷12號</li>
-                            <li>役畢</li>
-                          </ul>
-                        </div>
+                  <div class="col">
+                    <ul class="itemContent my-4 ml-3">
+                      <li>林修平</li>
+                      <li>1982/12/30</li>
+                      <li>0919-035176</li>
+                      <li>shoppingq@gmail.com</li>
+                      <li>臺中市太平區中源街2巷12號</li>
+                      <li>役畢</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <section id="experience">
+            <div class="subtitle text-center">
+              <div class="box mb-3"></div>
+              <p>學/經歷</p>
+            </div>
+            <div class="timeline-section2">
+              <div class="row my-3 timeline-pointer">
+                <div class="col-sm-6 text-right">
+                  <small class="period">2001</small>
+                  <h4 class="institution">新竹師範學院</h4>
+                  <p class="detail">社會科教育學系 <small>(~2005)</small></p>
+                </div>
+                <div class="col-sm-6">
+                  <div class="transparentbox"></div>
+                </div>
+              </div>
+              <div class="row timeline-pointer my-3 flex-sm-row-reverse">
+                <div class="col-sm-6">
+                  <small class="period">2005</small>
+                  <h4 class="institution">太平區中華國小</h4>
+                  <p class="detail">實習/短期代理/課後照顧班 <small>(~2011)</small></p>
+                </div>
+                <div class="col-sm-6">
+                  <div class="transparentbox"></div>
+                </div>
+              </div>
+              <div class="row timeline-pointer my-3">
+                <div class="col-sm-6 text-right">
+                  <small class="period">2006</small>
+                  <h4 class="institution">嘉義大學</h4>
+                  <p class="detail">數位學習設計與管理所 <small>(~2012)</small></p>
+                </div>
+                <div class="col-sm-6">
+                  <div class="transparentbox"></div>
+                </div>
+              </div>
+              <div class="row timeline-pointer my-3 flex-sm-row-reverse">
+                <div class="col-sm-6">
+                  <small class="period">2013</small>
+                  <h4 class="institution">太平區中華國小</h4>
+                  <p class="detail">班級導師 <small>(~2019)</small></p>
+                </div>
+                <div class="col-sm-6">
+                  <div class="transparentbox"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="skill">
+            <div class="subtitle text-center">
+              <div class="box mb-3"></div>
+              <p>專長/能力證明</p>
+            </div>
+            <div class="timeline-section">
+              <div class="timeline-pointer">
+                <div class="row">
+                  <div class="col">
+                    <div class="expertise text-right my-4 mr-3">
+                      <div class="expertiseGroups">
+                        <small>網頁設計</small>
+                        <p>HTML5 | CSS3 | Javascript</p>
                       </div>
+                      <div class="expertiseGroups">
+                        <small>平面設計</small>
+                        <p>Adobe photoshop | illustrator | indesign</p>
+                      </div>
+                      
                     </div>
-                    
                   </div>
-                </section>
-                <section class="experience">
-                  
-                </section>
+                  <div class="col">
+                    <div class="certificate my-4 ml-3">
+                      <ul>
+                        <li class="mb-3">Adobe Certified Associate in Visual Design Using Adobe Photoshop</li>
+                        <li class="mb-3">Adobe Certified Associate in Graphic Design & Illustration Using Adobe Illustrator</li>
+                        <li>Microsoft Office Master 2016</li>
+                        <small>Word/Excel/PowerPoint/Outlook</small>
+                        <li class=" mt-3 mb-3">TQC Excel 2016專業級</li>
+                        <li>109年度 UI介面設計到RWD網頁程式-跨平台前端設計暨工程師培訓班 結訓</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
-            <div class="content" id="about">
-              <div class="title text-center">About me</div>
-            </div>
-            <div class="content" id="portfolio">
-              <div class="title text-center">Portfolio</div>
-            </div>
-        </article>
-      </main>
-    </div>
-    
+          </section>
+        </div>
+        <div class="content" id="about">
+          <div class="title text-center">About me</div>
+        </div>
+        <div class="content" id="portfolio">
+          <div class="title text-center">Portfolio</div>
+        </div>
+      </article>
+    </main>
+  </div>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-    <script>
-      /////// 分頁 ///////
-      var btns = document.querySelectorAll('.btn');
-        var contents = document.querySelectorAll('.content')
 
-        for (let i = 0; i < btns.length; i++) {
-            const index = i;
-            const btn = btns[i]
-            const content = contents[i]
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script>
+    /////// 分頁 ///////
+    var btns = document.querySelectorAll('.btn');
+    var contents = document.querySelectorAll('.content')
 
-            btns[i].onclick = function () {
-                // console.log(index);
+    for (let i = 0; i < btns.length; i++) {
+      const index = i;
+      const btn = btns[i]
+      const content = contents[i]
 
-                remove_active();
+      btns[i].onclick = function () {
+        // console.log(index);
 
-                btn.classList.add('active');
-                content.classList.add('active');
-            }
-        }
-        function remove_active(){
-            for (let i = 0; i < btns.length; i++) {
-                    btns[i].classList.remove('active');
-                    contents[i].classList.remove('active');
-                }
-        }
+        remove_active();
+
+        btn.classList.add('active');
+        content.classList.add('active');
+      }
+    }
+    function remove_active() {
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].classList.remove('active');
+        contents[i].classList.remove('active');
+      }
+    }
         /////// 分頁 ///////
-    </script>
+  </script>
 </body>
+
 </html>
