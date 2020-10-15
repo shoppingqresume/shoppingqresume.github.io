@@ -1,0 +1,12 @@
+@import 'var';
+@import 'mixin';
+
+nav{
+   .navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 2.5vw;
+   } 
+   .nav-links{
+       margin-left: 18rem;
+   }
+}
