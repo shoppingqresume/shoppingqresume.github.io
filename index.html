@@ -7,29 +7,80 @@
      <!-- bootstrap -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <!-- hover.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light my-3">
-            <a class="navbar-brand" href="index.html">Shoppingq Lin</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav-links" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Resume<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
-                  </li>
-              </ul>
+    <div class="container mt-5">
+      <main class="tab d-flex">
+        <aside class="tab_btns d-flex flex-column">
+          <div class="photo"></div>  
+          <div class="btn hvr-bounce-to-right active">
+              <i class="fas fa-file-alt"></i>
+              <span class="btn-en">Resume</span><span class="btn-ch">履歷</span>
             </div>
-        </nav>
+            
+            <div class="btn hvr-bounce-to-right">
+              <i class="fas fa-user-tie"></i>
+              <span class="btn-en">About</span><span class="btn-ch">自傳</span>
+            </div>
+            <div class="btn hvr-bounce-to-right">
+              <i class="fas fa-briefcase"></i>
+              <span class="btn-en">Portfolio</span><span class="btn-ch">作品集</span>
+            </div>
+        </aside>
+        <article class="tab_contents py-5">
+            <div class="content active" id="resume">
+                <div class="title text-center">Resume</div>
+                <section class="information">
+                  <div class="subtitle text-center">
+                    <div class="box mb-3"></div>
+                    <p>基本資料</p>
+                  </div>
+                  <div class="timeline-section">
+                    <div class="timeline-pointer">
+                      <div class="row">
+                        <div class="col">
+                          <ul class="item text-right my-4 mr-3">
+                            <li>姓名</li>
+                            <li>出生日期</li>
+                            <li>聯絡電話</li>
+                            <li>電子郵件</li>
+                            <li>通訊地址</li>
+                            <li>兵役</li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="itemContent my-4 ml-3">
+                            <li>林修平</li>
+                            <li>1982/12/30</li>
+                            <li>0919-035176</li>
+                            <li>shoppingq@gmail.com</li>
+                            <li>臺中市太平區中源街2巷12號</li>
+                            <li>役畢</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </section>
+                <section class="experience">
+                  
+                </section>
+            </div>
+            <div class="content" id="about">
+              <div class="title text-center">About me</div>
+            </div>
+            <div class="content" id="portfolio">
+              <div class="title text-center">Portfolio</div>
+            </div>
+        </article>
+      </main>
     </div>
     
 
@@ -44,5 +95,32 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script>
+      /////// 分頁 ///////
+      var btns = document.querySelectorAll('.btn');
+        var contents = document.querySelectorAll('.content')
+
+        for (let i = 0; i < btns.length; i++) {
+            const index = i;
+            const btn = btns[i]
+            const content = contents[i]
+
+            btns[i].onclick = function () {
+                // console.log(index);
+
+                remove_active();
+
+                btn.classList.add('active');
+                content.classList.add('active');
+            }
+        }
+        function remove_active(){
+            for (let i = 0; i < btns.length; i++) {
+                    btns[i].classList.remove('active');
+                    contents[i].classList.remove('active');
+                }
+        }
+        /////// 分頁 ///////
+    </script>
 </body>
 </html>
