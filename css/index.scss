@@ -16,19 +16,27 @@ ul{
         line-height: 2rem;
     }
 }
+.container{
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .tab {
-    width: 960px;
+    width: 100%;
     margin: auto;
+    box-shadow: 3px 3px 8px $lighttext;
     .tab_btns {
-        width: 15%;
+        width: 100%;
+        @include lg{
+            width: 15%;
+        }
         .photo{
             width: 100%;
             height: 15vh;
-            background-color: #D8D584;
+            background-color:$themecolor;
         }
         .btn {
-            width: 100%;
+            width: 33.3333%;
             height: 15vh;
             background-color: #fff;
             border: 1px solid #eee;
@@ -42,25 +50,49 @@ ul{
             line-height: 15vh;
 
             position: relative;
-            
+            @include lg{
+                width: 100%;
+            }
+            .btn-ch{
+                display: none;
+            }
+            .btn-en{
+                display: none;
+                @include sm{
+                    display: inline;
+                }
+            }
             &:hover>.btn-ch,&.active>.btn-ch{display: inline;}
             &:hover>.btn-en,&.active>.btn-en{display: none;}
 
             &.active {
-                background-color: #D8D584;
+                background-color:$themecolor;
             }
             &.active:after {
                 content: '';
                 position: absolute;
-                right: 0;
-                top: 50%;
+                top: 100%;
+                left: 50%;
                 width: 0;
                 height: 0;
                 border: 12px solid transparent;
-                border-left-color: #d8d584;
-                border-right: 0;
-                margin-top: -12px;
-                margin-right: -12px;
+                border-top-color:$themecolor;
+                border-bottom: 0;
+                transform: translateX(-50%);
+                // margin-bottom: -12px;
+            }
+            @include lg{
+                &.active:after {
+                    content: '';
+                    left: 100%;
+                    top: 50%;
+                    border: 12px solid transparent;
+                    border-left-color:$themecolor;
+                    border-right: 0;
+                    transform: translateY(-50%);
+                    // margin-right: -12px;
+                    border-top-color: transparent;
+                }
             }
             .btnIcon{
                 height: 35%;
@@ -68,22 +100,23 @@ ul{
             .btnText{
                 height: 65%;
             }
-            .btn-ch{
-                display: none;
-            }
+            
             .fas{
                 font-size: 1.5rem;
             }
             
         }
         .hvr-bounce-to-right:before{
-            background:#D8D584;
+            background:$themecolor;
         }
     }
     .tab_contents {
-        width: 85%;
+        width: 100%;
         border: 1px solid #eee;
-        box-shadow: 3px 3px 8px $lighttext;
+        @include lg{
+            width: 85%;
+        }
+
         .content {
             color: #000;    
             padding: 20px;
@@ -102,7 +135,7 @@ ul{
             .box{
                 width: 25px;
                 height: 12px;
-                background-color: #D8D584;
+                background-color:$themecolor;
                 margin: auto;
             }
             p{
@@ -162,6 +195,15 @@ ul{
                 color: $lighttext;
             }
         }
+        #information{
+            @media (max-width: 576px) { 
+                .timeline-section:after, 
+                .timeline-pointer::before,
+                .timeline-pointer:last-child::after {
+                  display: none;
+                }
+              }
+        }
         #experience{
             .timeline-section2 {
                 margin-top: 50px;
@@ -193,14 +235,47 @@ ul{
                         z-index: 1;
                     }
                 }
+                h4{
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    color: darken($themecolor,15%);
+                    @include sm{
+                        font-size: 1.35rem;
+                    }
+                }
             } 
             .period{
                 color: $lighttext;
             }
         }
         #skill{
+            .row p , ul{
+                font-size: 0.8rem;
+                @include lg{
+                    font-size: 1rem;
+                }
+            }
+            
             small{
-                color: $lighttext;
+                color: darken($themecolor,30%);
+            }
+            .badges{
+                font-size: 1.25rem;
+            }
+            .certificate{
+                .certificateArea{
+                    padding-right: 1rem;
+                    @include md{
+                        padding-right: 4rem;   
+                    } 
+                }
+            }
+            .acclaim_badges{
+                width: 100%;
+                margin: auto;
+                & > * {
+                    margin: 5px 6px 0 6px;
+                }
             } 
         }
         
