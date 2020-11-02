@@ -4,6 +4,10 @@
 *{
     box-sizing: border-box;
 }
+a{
+    color: unset;
+    text-decoration: none;
+}
 
 body {
     margin: 0;
@@ -136,7 +140,9 @@ ul{
         }
         .title{
             font-size: 3vw;
-            font-family: 'Raleway', sans-serif;
+            // font-family: 'Lobster';
+            // font-family: 'Sigmar One';
+            font-family: 'Damion';
         }
         .subtitle{
             margin-top: 3rem;
@@ -286,6 +292,56 @@ ul{
                 }
             } 
         }
-        
+        .portfolio-boxs{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 30px;
+            @include lg{
+                justify-content: space-between;
+            }
+        }
+        .portfolio-box{
+            display: block;
+            width: 90%;
+            height: 30vw;
+            background-size: cover;
+            background-position: center center;
+            margin-bottom: 15px;    
+
+            position: relative;
+
+            @include lg{
+                width: 48%;
+                height: 15vw;
+            }
+            &:hover>p{
+                display:block;
+            }
+            .mask{
+                background-color: rgba(0, 0, 0, 0);
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.9); 
+                }
+            }
+            .portfolio-text{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50% , -50%);
+                color:#fff;
+
+                display:none;
+            }
+        }
+        .p-box1{
+            background-image: url('../img/portfolio/doorsss.png');
+        }
+        .p-box2{
+            background-image: url('../img/portfolio/truesoul.jpg');
+        }
     }
 }
