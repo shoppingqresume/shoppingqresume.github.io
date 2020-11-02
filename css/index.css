@@ -43,7 +43,18 @@ ul li {
 .tab .tab_btns .photo {
   width: 100%;
   height: 15vh;
-  background-color: #D8D584;
+  background-color: #F0F4FA;
+  background-image: url("../img/LIN.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top 20% center;
+}
+
+@media (min-width: 992px) {
+  .tab .tab_btns .photo {
+    background-size: cover;
+    background-position: top 20% center;
+  }
 }
 
 .tab .tab_btns .btn {
@@ -288,7 +299,7 @@ ul li {
 .tab .tab_contents #experience .timeline-section2 h4 {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #c6c14a;
+  color: #94902f;
 }
 
 @media (min-width: 576px) {

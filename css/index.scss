@@ -33,7 +33,15 @@ ul{
         .photo{
             width: 100%;
             height: 15vh;
-            background-color:$themecolor;
+            background-color: #F0F4FA;
+            background-image: url('../img/LIN.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top 20% center;
+            @include lg{
+                background-size: cover;
+                background-position: top 20% center;
+            }
         }
         .btn {
             width: 33.3333%;
@@ -238,7 +246,7 @@ ul{
                 h4{
                     font-size: 1.1rem;
                     font-weight: bold;
-                    color: darken($themecolor,15%);
+                    color: darken($themecolor,30%);
                     @include sm{
                         font-size: 1.35rem;
                     }
