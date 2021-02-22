@@ -14,11 +14,19 @@
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- MaterialIcons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-  <a href="#" title="返回頁首"><div class="backtoTop displayNone">∧</div></a>
+  <div class="backtoTop">
+    <a href="#" title="返回頁首">
+      <span class="material-icons goTop hvr-wobble-vertical">keyboard_arrow_up</span>
+    </a>
+  </div>
   <main class="container mt-5 tab d-flex flex-column flex-lg-row">
     <!-- 標籤 -->
     <aside class="tab_btns d-flex flex-wrap flex-lg-column">
@@ -40,220 +48,303 @@
     <!-- 分頁內容 -->
     <article class="tab_contents pt-5 position-r">
       <div class="content active" id="resume">
-        <div class="top">
-          <div class="title text-center">Resume</div>
-          <section id="information">
-            <div class="subtitle text-center">
-              <div class="box mb-3"></div>
-              <p>基本資料</p>
-            </div>
-            <div class="timeline-section">
-              <div class="timeline-pointer">
-                <div class="row">
-                  <div class="col d-none d-sm-block">
-                    <ul class="item text-right my-4 mr-3">
-                      <li>姓名</li>
-                      <li>出生日期</li>
-                      <li>聯絡電話</li>
-                      <li>電子郵件</li>
-                      <li>通訊地址</li>
-                      <li>兵役</li>
-                    </ul>
-                  </div>
-                  <div class="col d-flex flex-column align-items-center d-sm-block">
-                    <ul class="itemContent my-4 ml-3 text-center text-sm-left">
-                      <li>林修平</li>
-                      <li>1982/12/30</li>
-                      <li>0919-035176</li>
-                      <li>shoppingq@gmail.com</li>
-                      <li>臺中市太平區中源街2巷12號</li>
-                      <li>役畢</li>
-                    </ul>
-                  </div>
+        <div class="title text-center">Resume</div>
+        <section id="information">
+          <div class="subtitle text-center">
+            <div class="box mb-3"></div>
+            <p>基本資料</p>
+          </div>
+          <div class="timeline-section">
+            <div class="timeline-pointer">
+              <div class="row">
+                <div class="col d-none d-sm-block">
+                  <ul class="item text-right my-4 mr-3">
+                    <li>姓名</li>
+                    <li>出生日期</li>
+                    <li>聯絡電話</li>
+                    <li>電子郵件</li>
+                    <li>通訊地址</li>
+                    <li>兵役</li>
+                  </ul>
+                </div>
+                <div class="col d-flex flex-column align-items-center d-sm-block">
+                  <ul class="itemContent my-4 ml-3 text-center text-sm-left">
+                    <li>林修平</li>
+                    <li>1982/12/30</li>
+                    <li>0919-035176</li>
+                    <li>shoppingq@gmail.com</li>
+                    <li>臺中市太平區中源街2巷12號</li>
+                    <li>役畢</li>
+                  </ul>
                 </div>
               </div>
+            </div>
 
-            </div>
-          </section>
-          <section id="experience">
-            <div class="subtitle text-center">
-              <div class="box mb-3"></div>
-              <p>學/經歷</p>
-            </div>
-            <div class="timeline-section2">
-              <div class="row my-3 timeline-pointer">
-                <div class="col-6 text-right">
-                  <small class="period">2001</small>
-                  <h4 class="institution">新竹師範學院</h4>
-                  <p class="detail">社會科教育學系 <small>(~2005)</small></p>
-                </div>
-                <div class="col-6">
-                  <div class="transparentbox"></div>
-                </div>
+          </div>
+        </section>
+        <section id="experience">
+          <div class="subtitle text-center">
+            <div class="box mb-3"></div>
+            <p>學/經歷</p>
+          </div>
+          <div class="timeline-section2">
+            <div class="row my-3 timeline-pointer">
+              <div class="col-6 text-right">
+                <small class="period">2001</small>
+                <h4 class="institution">新竹師範學院</h4>
+                <p class="detail">社會科教育學系 <small>(~2005)</small></p>
               </div>
-              <div class="row timeline-pointer my-3 flex-row-reverse">
-                <div class="col-6">
-                  <small class="period">2005</small>
-                  <h4 class="institution">太平區中華國小</h4>
-                  <p class="detail">實習/短期代理/課後照顧班 <small>(~2011)</small></p>
-                </div>
-                <div class="col-6">
-                  <div class="transparentbox"></div>
-                </div>
-              </div>
-              <div class="row timeline-pointer my-3">
-                <div class="col-6 text-right">
-                  <small class="period">2006</small>
-                  <h4 class="institution">嘉義大學</h4>
-                  <p class="detail">數位學習設計與管理所 <small>(~2012)</small></p>
-                </div>
-                <div class="col-6">
-                  <div class="transparentbox"></div>
-                </div>
-              </div>
-              <div class="row timeline-pointer my-3 flex-row-reverse">
-                <div class="col-6">
-                  <small class="period">2013</small>
-                  <h4 class="institution">太平區中華國小</h4>
-                  <p class="detail">班級導師 <small>(~2019)</small></p>
-                </div>
-                <div class="col-6">
-                  <div class="transparentbox"></div>
-                </div>
+              <div class="col-6">
+                <div class="transparentbox"></div>
               </div>
             </div>
-          </section>
-          <section id="skill">
-            <div class="subtitle text-center">
-              <div class="box mb-3"></div>
-              <p>專長/能力證明</p>
+            <div class="row timeline-pointer my-3 flex-row-reverse">
+              <div class="col-6">
+                <small class="period">2005</small>
+                <h4 class="institution">太平區中華國小</h4>
+                <p class="detail">實習/短期代理/課後照顧班 <small>(~2011)</small></p>
+              </div>
+              <div class="col-6">
+                <div class="transparentbox"></div>
+              </div>
             </div>
-            <div class="timeline-section">
-              <div class="timeline-pointer">
-                <div class="row">
-                  <div class="col expertise text-right my-4 mr-3">
-                    <div class="expertiseGroups">
-                      <small>網頁設計</small>
-                      <div class="badges">
-                        <span class="badge badge-light">HTML</span>
-                        <span class="badge badge-light">CSS</span>
-                        <span class="badge badge-light">Javascript</span>
-                      </div>
+            <div class="row timeline-pointer my-3">
+              <div class="col-6 text-right">
+                <small class="period">2006</small>
+                <h4 class="institution">嘉義大學</h4>
+                <p class="detail">數位學習設計與管理所 <small>(~2012)</small></p>
+              </div>
+              <div class="col-6">
+                <div class="transparentbox"></div>
+              </div>
+            </div>
+            <div class="row timeline-pointer my-3 flex-row-reverse">
+              <div class="col-6">
+                <small class="period">2013</small>
+                <h4 class="institution">太平區中華國小</h4>
+                <p class="detail">班級導師 <small>(~2019)</small></p>
+              </div>
+              <div class="col-6">
+                <div class="transparentbox"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="skill">
+          <div class="subtitle text-center">
+            <div class="box mb-3"></div>
+            <p>專長/能力證明</p>
+          </div>
+          <div class="timeline-section">
+            <div class="timeline-pointer">
+              <div class="row">
+                <div class="col expertise text-right my-4 mr-3">
+                  <div class="expertiseGroups mb-4">
+                    <small>網頁設計</small>
+                    <div class="badges">
+                      <span class="badge badge-light">HTML</span>
+                      <span class="badge badge-light">CSS</span>
+                      <span class="badge badge-light">Javascript</span>
+                      <span class="badge badge-light">jQuery</span>
                     </div>
-                    <div class="expertiseGroups">
-                      <small>平面設計</small>
-                      <div class="badges">
-                        <span class="badge badge-light">Photoshop</span>
-                        <span class="badge badge-light">Illustrator</span>
-                        <span class="badge badge-light">Indesign</span>
-                      </div>
-                    </div>
-                    <div class="expertiseGroups">
-                      <small>影音剪輯</small>
-                      <div class="badges">
-                        <span class="badge badge-light">Premiere Pro</span>
-                        <span class="badge badge-light">Afte Effects</span>
-                        <span class="badge badge-light">Audition</span>
-                      </div>
-                    </div>
-                    <div class="expertiseGroups">
-                      <small>辦公室應用</small>
-                      <div class="badges">
-                        <span class="badge badge-light">Word</span>
-                        <span class="badge badge-light">Excel</span>
-                        <span class="badge badge-light">PowerPoint</span>
-                        <span class="badge badge-light">Outlook</span>
-                      </div>
-                    </div>
-                    <div class="expertiseGroups">
-                      <small>簡報與心智工具</small>
-                      <div class="badges">
-                        <span class="badge badge-light">Prezi</span>
-                        <span class="badge badge-light">Xmind</span>
-                        <span class="badge badge-light">Coggle</span>
-                      </div>
-                    </div>
-                    <div class="expertiseGroups">
-                      <small>UI/UX工具</small>
-                      <div class="badges">
-                        <span class="badge badge-light">XD</span>
-                      </div>
-                    </div>
-
                   </div>
-                  <div class="col certificate my-4 ml-3">
-                    <ul class="certificateArea">
-                      <li>
-                        <span class="d-none d-md-block">Adobe Certified Associate in Visual Design Using Adobe
-                          Photoshop</span>
-                        <span class="d-md-none">Adobe ACA Photoshop2018</span>
-                      </li>
-                      <hr>
-                      <li>
-                        <span class="d-none d-md-block">Adobe Certified Associate in Graphic Design & Illustration Using
-                          Adobe Illustrator</span>
-                        <span class="d-md-none">Adobe ACA Illustrator2019</span>
-                      </li>
-                      <hr>
-                      <li>Microsoft Office Master 2016</li>
-                      <hr>
-                      <li>TQC Excel 2016專業級</li>
-                      <hr>
-                      <li>109年度 UI介面設計到RWD網頁程式-跨平台前端設計暨工程師培訓班 結訓</li>
-                      <hr>
-                      <li>六角學院 2020秋季切版直播班 培訓中</li>
-                    </ul>
+                  <div class="expertiseGroups mb-4">
+                    <small>平面設計</small>
+                    <div class="badges">
+                      <span class="badge badge-light">Photoshop</span>
+                      <span class="badge badge-light">Illustrator</span>
+                      <span class="badge badge-light">Indesign</span>
+                    </div>
                   </div>
+                  <div class="expertiseGroups mb-4">
+                    <small>影音剪輯</small>
+                    <div class="badges">
+                      <span class="badge badge-light">Premiere Pro</span>
+                      <span class="badge badge-light">Afte Effects</span>
+                      <span class="badge badge-light">Audition</span>
+                    </div>
+                  </div>
+                  <div class="expertiseGroups mb-4">
+                    <small>辦公室應用</small>
+                    <div class="badges">
+                      <span class="badge badge-light">Word</span>
+                      <span class="badge badge-light">Excel</span>
+                      <span class="badge badge-light">PowerPoint</span>
+                      <span class="badge badge-light">Outlook</span>
+                    </div>
+                  </div>
+                  <div class="expertiseGroups mb-4">
+                    <small>簡報與流程圖工具</small>
+                    <div class="badges">
+                      <span class="badge badge-light">Prezi</span>
+                      <span class="badge badge-light">Xmind</span>
+                      <span class="badge badge-light">Coggle</span>
+                      <span class="badge badge-light">Whimsical</span>
+                    </div>
+                  </div>
+                  <div class="expertiseGroups mb-4">
+                    <small>UI/UX工具</small>
+                    <div class="badges">
+                      <span class="badge badge-light">XD</span>
+                      <span class="badge badge-light">Figma</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col certificate my-4 ml-3">
+                  <ul class="certificateArea">
+                    <!-- Adobe -->
+                    <li>
+                      <span class="cursor-pointer" title="點擊看詳細內容">Adobe Certified Professional : Visual Design</span>
+                      <a href="img/certi/ACAvisualDesign.png" data-lightbox="image-1-0" data-title="Adobe視覺設計專家"><i
+                          class="fas fa-file-certificate ml-1"></i></a>
+                      <ul class="detail">
+                        <li>ACA in Visual Design Using Adobe Photoshop
+                          <a href="img/certi/ACAps2018.png" data-lightbox="image-1-1"
+                            data-title="Adobe Photoshop 2018"><i class="fas fa-file-certificate ml-1"></i></a>
+                        </li>
+                        <li>
+                          <span>ACA in Graphic Design & Illustration Using Illustrator</span>
+                          <a href="img/certi/ACAillustrator2019.png" data-lightbox="image-1-2"
+                            data-title="Adobe Illustrator 2019"><i class="fas fa-file-certificate ml-1"></i></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <hr>
+                    <!-- Microsoft Office -->
+                    <li>
+                      <span class="cursor-pointer" title="點擊看詳細內容">Microsoft Office Master 2016</span>
+                      <a href="img/certi/master2016.png" data-lightbox="image-2-0"
+                        data-title="Microsoft Office Specialist Master"><i class="fas fa-file-certificate ml-1"></i></a>
+                      <ul class="detail">
+                        <li>Microsoft Office Word 2016 Expert
+                          <a href="img/certi/word2016.png" data-lightbox="image-2-1"
+                            data-title="Microsoft Office Word 2016 Expert"><i
+                              class="fas fa-file-certificate ml-1"></i></a>
+                        </li>
+                        <li>Microsoft Office Excel® 2016 Expert
+                          <a href="img/certi/excel2016.png" data-lightbox="image-2-2"
+                            data-title="Microsoft Office Excel® 2016 Expert"><i
+                              class="fas fa-file-certificate ml-1"></i></a>
+                        </li>
+                        <li>Microsoft Office PowerPoint® 2016 Expert
+                          <a href="img/certi/ppt2016.png" data-lightbox="image-2-3"
+                            data-title="Microsoft Office PowerPoint® 2016 Expert"><i
+                              class="fas fa-file-certificate ml-1"></i></a>
+                        </li>
+                        <li>Microsoft Office Outlook® 2016 Expert
+                          <a href="img/certi/outlook2016.png" data-lightbox="image-2-4"
+                            data-title="Microsoft Office Outlook® 2016 Expert"><i
+                              class="fas fa-file-certificate ml-1"></i></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <hr>
+                    <!-- TQC -->
+                    <li>
+                      <span class="cursor-pointer" title="點擊看詳細內容">TQC Excel 2016專業級</span>
+                      <a href="img/certi/TQCexcel2016.png" data-lightbox="image-3" data-title="TQC Excel 2016專業級"><i
+                          class="fas fa-file-certificate ml-1"></i></a>
+                    </li>
+                    <hr>
+                    <!-- 職訓班 -->
+                    <li>
+                      <span class="cursor-pointer" title="點擊看詳細內容">109年度 UI介面設計到RWD網頁程式-跨平台前端設計暨工程師培訓班 結訓</span>
+                      <a href="img/certi/Vtraining.png" data-lightbox="image-4"
+                        data-title="109年度 UI介面設計到RWD網頁程式-跨平台前端設計暨工程師培訓班"><i
+                          class="fas fa-file-certificate ml-1"></i></a>
+                      <ul class="detail">
+                        <li>期間：2020.7.20~2020.10.19</li>
+                      </ul>
+                    </li>
+                    <hr>
+                    <!-- Hex 切版 -->
+                    <li>
+                      <span class="cursor-pointer" title="點擊看詳細內容">六角學院 2020秋季切版直播班 結訓</span>
+                      <a href="img/certi/hexLayout2020.png" data-lightbox="image-5"
+                        data-title="六角學院 2020秋季切版直播班 完課學霸證書"><i class="fas fa-file-certificate ml-1"></i></a>
+                      <ul class="detail">
+                        <li>期間：2020.10.16~2020.12.4</li>
+                        <li>備註：達成100%課程任務，獲頒學霸獎狀</li>
+                      </ul>
+                    </li>
+                    <hr>
+                    <!-- 學米 JS -->
+                    <li>
+                      <span class="cursor-pointer" title="點擊看詳細內容">學米平台 JavaScript網頁開發實戰營 結訓</span>
+                      <a href="img/certi/JavaScript12days.png" data-lightbox="image-6" data-title="friendship"><i
+                          class="fas fa-file-certificate ml-1"></i></a>
+                      <ul class="detail">
+                        <li>期間：2020.12.14~2020.12.23</li>
+                        <li>備註：完成所有課程任務，獲頒完整學習證書</li>
+                      </ul>
+                    </li>
+                    <hr>
+                    <!-- 學米Figma -->
+                    <li>
+                      <span class="cursor-pointer" title="點擊看詳細內容">學米平台 Figma線上實戰營結訓</span>
+                      <a href="img/certi/Figma21days.png" data-lightbox="image-7" data-title="學米平台 21天Figma線上實戰營"><i
+                          class="fas fa-file-certificate ml-1"></i></a>
+                      <ul class="detail">
+                        <li>期間：2020.12.21~2021.1.10</li>
+                        <li>備註：完成所有課程任務，獲頒完整學習證書</li>
+                      </ul>
+                    </li>
+                    <hr>
+                    <li>六角學院 2021春季JS工程師養成班受訓中</li>
+                    <hr>
+                    <li>六角學院 2021夏季vue作品實戰班預定受訓</li>
+                  </ul>
                 </div>
               </div>
+            </div>
 
-            </div>
-            <div class="acclaim_badges mt-3 d-flex flex-wrap justify-content-center">
-              <!-- MOS master -->
-              <div data-iframe-width="150" data-iframe-height="270"
-                data-share-badge-id="e7c0fbab-a125-437d-b2ae-245000fee3c6"
-                data-share-badge-host="https://www.youracclaim.com"></div>
-              <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
-              <!-- MOS word -->
-              <div data-iframe-width="150" data-iframe-height="270"
-                data-share-badge-id="1e37af2e-ce04-4dfa-93a3-e34b737afd64"
-                data-share-badge-host="https://www.youracclaim.com"></div>
-              <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
-              <!-- MOS Excel -->
-              <div data-iframe-width="150" data-iframe-height="270"
-                data-share-badge-id="81fec5ad-8a12-466c-88c7-b895a6b93d01"
-                data-share-badge-host="https://www.youracclaim.com"></div>
-              <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
-              <!-- MOS PowerPoint -->
-              <div data-iframe-width="150" data-iframe-height="270"
-                data-share-badge-id="27dbaec8-7bae-4ac0-991a-338b93eac744"
-                data-share-badge-host="https://www.youracclaim.com"></div>
-              <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
-              <!-- MOS Outlook -->
-              <div data-iframe-width="150" data-iframe-height="270"
-                data-share-badge-id="f2961744-6fd0-44bf-9b98-fdcb1c2ebca4"
-                data-share-badge-host="https://www.youracclaim.com"></div>
-              <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
-              <!-- ACA photoshop -->
-              <div data-iframe-width="150" data-iframe-height="270"
-                data-share-badge-id="48cb97a3-88f9-4421-a8c6-e1acf5402492"
-                data-share-badge-host="https://www.youracclaim.com"></div>
-              <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
-              <!-- ACA illustrator -->
-              <div data-iframe-width="150" data-iframe-height="270"
-                data-share-badge-id="c9545510-0b6b-481a-b66b-ca1e5966c2b5"
-                data-share-badge-host="https://www.youracclaim.com"></div>
-              <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
-            </div>
-          </section>
-        </div>
+          </div>
+          <div class="acclaim_badges mt-3 d-flex flex-wrap justify-content-center">
+            <!-- MOS master -->
+            <div data-iframe-width="150" data-iframe-height="270"
+              data-share-badge-id="e7c0fbab-a125-437d-b2ae-245000fee3c6"
+              data-share-badge-host="https://www.youracclaim.com"></div>
+            <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+            <!-- MOS word -->
+            <div data-iframe-width="150" data-iframe-height="270"
+              data-share-badge-id="1e37af2e-ce04-4dfa-93a3-e34b737afd64"
+              data-share-badge-host="https://www.youracclaim.com"></div>
+            <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+            <!-- MOS Excel -->
+            <div data-iframe-width="150" data-iframe-height="270"
+              data-share-badge-id="81fec5ad-8a12-466c-88c7-b895a6b93d01"
+              data-share-badge-host="https://www.youracclaim.com"></div>
+            <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+            <!-- MOS PowerPoint -->
+            <div data-iframe-width="150" data-iframe-height="270"
+              data-share-badge-id="27dbaec8-7bae-4ac0-991a-338b93eac744"
+              data-share-badge-host="https://www.youracclaim.com"></div>
+            <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+            <!-- MOS Outlook -->
+            <div data-iframe-width="150" data-iframe-height="270"
+              data-share-badge-id="f2961744-6fd0-44bf-9b98-fdcb1c2ebca4"
+              data-share-badge-host="https://www.youracclaim.com"></div>
+            <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+            <!-- ACA photoshop -->
+            <div data-iframe-width="150" data-iframe-height="270"
+              data-share-badge-id="48cb97a3-88f9-4421-a8c6-e1acf5402492"
+              data-share-badge-host="https://www.youracclaim.com"></div>
+            <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+            <!-- ACA illustrator -->
+            <div data-iframe-width="150" data-iframe-height="270"
+              data-share-badge-id="c9545510-0b6b-481a-b66b-ca1e5966c2b5"
+              data-share-badge-host="https://www.youracclaim.com"></div>
+            <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+          </div>
+        </section>
       </div>
       <div class="content" id="about">
         <div class="title text-center">About me</div>
         <section class="atSchool">
           <div class="subtitle text-center">
             <div class="box mb-3"></div>
-            <p>求學階段</p>
+            <p class="mb-3">求學階段</p>
           </div>
           <p class="mx-5">
             求學過程影響我最深的應是高中階段參加了辯論社，在訓練口條、練習思辨的能力建立之外，並在擔任公關幹部時，職掌比賽交流連繫事宜，訓練了人際溝通與協調的能力，還建立了讀報的習慣，針對社會事能有更遼闊的視野與獨立的觀點；大學時就讀竹師社教，除了社會科學的訓練外，也擔任系學會副會長，並於系會年度大事—國小鄉土體驗營擔任總召，於活動內容設計、人員安排與各項溝通接洽中，累積不少活動舉辦經驗。碩班就讀嘉大數設所，吸取不同層面的知識與視野，對於學習內容揀選與設計呈現、學習趨勢及各項心智學習工具都有更多的心得與收穫。
@@ -262,54 +353,131 @@
         <section class="atWork">
           <div class="subtitle text-center">
             <div class="box mb-3"></div>
-            <p>就業階段</p>
+            <p class="mb-3">就業階段</p>
           </div>
           <p class="mx-5">
-            退伍後進入國小班級服務，除了營造更友善的學習環境，也致力於多元化與數位化的教學內容設計。此外還積極籌畫設計校外教育活動，如配合社會課本帶領台中孩子踏查臺南府城與淡水紅毛城、八里十三行遺跡等，平均每個月至少都會有一至兩次走出校外、走讀城市。大量的校外與日常特色活動，企劃案的書寫與各單位的聯繫也成為日常的職業環節，更努力提升自身影音剪輯能力，以能透過社群平臺與家長、社區交流與分享班級風景。班級之外，還積極配合學校行政業務，多次於周三舉辦校內資訊主題研習，並開辦教師桌遊學習社群，更於2018年作為學校班級教師代表，參與並通過教育部閱讀磐石學校之遴選。同時，也擔任學校辯論隊指導老師，在2018年市賽中取得國小組冠軍。值此期間，與同事的互助、與行政端的配合，讓我學習到人際溝通的技巧，以及共同為團隊目標努力以致達成的軟知識。
+            退伍後進入國小班級服務，除了營造更友善的學習實體環境，也擅長以資訊科技、訊息整理打造豐富多元的學習氛圍。此外還積極籌畫設計校外教育活動，如配合社會課本帶領台中孩子踏查臺南府城與淡水紅毛城、八里十三行遺跡等，平均每個月至少都會有一至兩次走出校外、走讀城市。大量的校外與日常特色活動，企劃案的書寫與各單位的聯繫也成為日常的職業環節，更努力提升自身影音剪輯能力，以能透過社群平臺與家長、社區交流與分享班級風景。班級之外，還積極配合學校行政業務，多次於周三舉辦校內資訊主題研習，並開辦教師桌遊學習社群，更於2018年作為學校班級教師代表，參與並通過教育部閱讀磐石學校之遴選。同時，也擔任學校辯論隊指導老師，在2018年市賽中取得國小組冠軍。值此期間，與同事的互助、與行政端的配合，讓我學習到人際溝通的技巧，以及共同為團隊目標努力以致達成的軟知識。
           </p>
         </section>
         <section class="atTraining">
           <div class="subtitle text-center">
             <div class="box mb-3"></div>
-            <p>職訓階段</p>
+            <p class="mb-3">沉澱，再出發</p>
           </div>
           <p class="mx-5">
-            學習新知、自我成長一直以來是我不間斷的習慣，在學校服務時就自發於六年間不間斷的在文大進修部參加本職學能相關的進修，同時間也在坊間針對自身興趣參加如Prezi簡報工作坊，以及針對數位軟體能力的進修。2018年中，當我考慮到始終無法於教職窄門中獲得正職該設年紀停損時，便開始於巨匠修習RWD網頁設計的知識；於2019年中離職後，更專心致力多面向能力的提升，陸續於一年中通過多項ACA、MOS與TQC的認證。2020年7月進入了職訓班，展開了3個月的網頁設計能力訓練。期間從平面設計開始，再到介面設計，乃至於網頁設計，經過老師們的認真指導，每一步都審慎學習，同時也配合六角學院的線上課程，同步加深學習印象。目前對於html5、css3已有一定心得，至於javascript雖僅止於入門，也開始逐步深化學習中，希冀網頁設計能益加隨心所欲。
+            學習新知、自我成長一直以來是我不間斷的習慣，在學校服務時就自發於六年間不間斷的在文大進修部參加本職學能相關的進修，同時間也在坊間針對自身興趣參加如Prezi簡報工作坊，以及針對數位軟體能力的進修。2018年中，當我考慮到始終無法於教職窄門中獲得正職該設年紀停損時，便開始於巨匠修習RWD網頁設計的知識；於2019年中離職後，更專心致力多面向能力的提升，陸續於一年中通過多項ACA、MOS與TQC的認證。2020年7月進入了職訓班，展開了3個月的網頁設計能力訓練。期間從平面設計開始，再到介面設計，乃至於網頁設計，經過老師們的認真指導，每一步都審慎學習，同時也配合線上課程，同步加深學習印象。10月結訓後也不懈怠，緊接著參與六角學院的切版直播班，三個月來透過課程與每週專案的實作，對於前端技術之一的切版，從Html5架構的編寫、優化，到使用SCSS管理CSS，以及bootstrap等CSS框架應用，以及相關的觀念以精簡並維護，都有顯著的進步。緊接著還參與學米平台的Figma實作營，期實際體會UI設計過程，將來能與設計師有更好的理解與溝通。
           </p>
         </section>
         <section class="future">
           <div class="subtitle text-center">
             <div class="box mb-3"></div>
-            <p>未來</p>
+            <p class="mb-3">未來</p>
           </div>
-          <p class="mx-5">
-            展望未來，結訓後我仍將積極針對學習上的不足進行補強，首先是javascript的熟悉，並進一步認識其框架react及vue；同時也已報名六角2020切版直播班，繼續加強切版的練習，透過不斷實務的操作希望讓技術內化；還計畫針對UI/UX內容有更深入的了解，也認識在XD之外更多的平台如
-            Figma等。
-
-            以上是對我從學習、職涯與職訓一路上的成長經驗，感謝您撥冗閱讀，也希望能給予我一個面試的機會能進一步證明自身能力與特質，再次感謝。
+          <p class="mx-5 mb-3">
+            我始終知道自己的不足，同時也知道怎樣讓自己更好。目前不斷鑽研的是JavaScript的加強與內化，除了初步已掌握JS的基礎知識、資料串接與jQuery函式庫，將來計畫學習框架react及vue，因此已開始安排緊湊的學習計畫，從現在開始的六角學院JS直播班，以及五月展開的Vue作品班，希望讓自己的網頁設計能力越來越完整。 
           </p>
+          <p class="mx-5 mb-5">以上是對我從學習、職涯與職訓一路上的成長經驗，感謝您撥冗閱讀，也希望能給予我一個面試的機會能進一步證明自身能力與特質，再次感謝。</p>
         </section>
       </div>
       <div class="content" id="portfolio">
         <div class="title text-center">Portfolio</div>
-        <div class="portfolio-boxs">
-          <a href="http://shoppingq.github.io" target="_blank" class="portfolio-box p-box1" rel="noopener noreferrer">
-            <div class="mask"></div>
-            <p class="portfolio-text">職訓班-個人專題練習</p>
-          </a>
-          <a href="http://bevegan.github.io" target="_blank" class="portfolio-box p-box2" rel="noopener noreferrer">
-            <div class="mask"></div>
-            <p class="portfolio-text">職訓班-團體專題練習</p>
-          </a>
-        </div>
-
-
-
+        <section class="designWork">
+          <div class="subtitle text-center">
+            <div class="box mb-3"></div>
+            <p class="mb-3">版型/UI&UX設計練習作品</p>
+          </div>
+          <div class="mx-5">
+            <div class="row">
+              <div class="col12 col-lg-3">
+                <a href="img/portfolio/design/coffeeshop.png" data-lightbox="portfolio-1-1" data-title="咖啡店" class="portfolio-box">
+                  <img src="img/portfolio/design/coffeeshop.png" alt="" class="img-fluid">
+                  <div class="mask"></div>
+                  <p class="portfolio-text">巨匠-網頁版型設計</p>
+                </a>
+              </div>
+              <div class="col12 col-lg-3">
+                <a href="img/portfolio/design/interior.jpg" data-lightbox="portfolio-1-2" data-title="室內設計" class="portfolio-box">
+                  <img src="img/portfolio/design/interior.jpg" alt="" class="img-fluid">
+                  <div class="mask"></div>
+                  <p class="portfolio-text">巨匠-網頁版型設計</p>
+                </a>
+              </div>
+              <div class="col12 col-lg-3">
+                <a href="img/portfolio/design/Kitchenware_pc.png" data-lightbox="portfolio-1-3" data-title="廚具" class="portfolio-box">
+                  <img src="img/portfolio/design/Kitchenware_pc.png" alt="" class="img-fluid">
+                  <div class="mask"></div>
+                  <p class="portfolio-text">巨匠-網頁版型設計</p>
+                </a>
+              </div>
+              <div class="col12 col-lg-3">
+                <a href="https://www.figma.com/file/yiCaUQskae3JcZQk94XG2r/shoppingq-21days-challenge?node-id=565%3A3210"  target="_blank" class="portfolio-box d-flex align-items-center bg-deepblue">
+                  <img src="img/portfolio/design/figma.jpeg" alt="" class="img-fluid">
+                  <div class="mask"></div>
+                  <p class="portfolio-text">學米-UI/UX設計</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="layoutWork">
+          <div class="subtitle text-center">
+            <div class="box mb-3"></div>
+            <p class="mb-3">切版練習作品</p>
+          </div>
+          <div class="mx-5">
+            <div class="row">
+              <div class="col12 col-lg-6">
+                <a href="http://shoppingq.github.io" target="_blank" class="portfolio-box bg-center p-box1" rel="noopener noreferrer">
+                  <p class="portfolio-text">職訓班-個人專題練習</p>
+                </a>
+              </div>
+              <div class="col12 col-lg-6">
+                <a href="http://bevegan.github.io" target="_blank" class="portfolio-box bg-center p-box2" rel="noopener noreferrer">
+                  <p class="portfolio-text">職訓班-團體專題練習</p>
+                </a>
+              </div>
+              <div class="col12 col-lg-6">
+                <a href="https://shoppingqhex.github.io/web_layout/w5/index.html" target="_blank" class="portfolio-box bg-center p-box3" rel="noopener noreferrer">
+                  <p class="portfolio-text">六角切版班-後台網站</p>
+                </a>
+              </div>
+              <div class="col12 col-lg-6">
+                <a href="https://shoppingqhex.github.io/web_layout/w6" target="_blank" class="portfolio-box bg-center p-box4" rel="noopener noreferrer">
+                  <p class="portfolio-text">六角切版班-香水網站</p>
+                </a>
+              </div>
+              <div class="col12 col-lg-6">
+                <a href="https://shoppingqhex.github.io/web_layout/w8/" target="_blank" class="portfolio-box bg-center p-box5" rel="noopener noreferrer">
+                  <p class="portfolio-text">六角切版班-電商網站</p>
+                </a>
+              </div>
+              <div class="col12 col-lg-6">
+                <a href="https://shoppingqhex.github.io/" target="_blank" class="portfolio-box bg-center p-box6" rel="noopener noreferrer">
+                  <p class="portfolio-text">其他六角切版作品</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+        <section class="jsWork">
+          <div class="subtitle text-center">
+            <div class="box mb-3"></div>
+            <p class="mb-3">JS練習作品</p>
+          </div>
+          <p class="text-center mb-3">準備中，稍後更新</p>
+        </section>
       </div>
       <div class="links">
-        <a href="https://www.facebook.com/shoppingq/" target="_blank"><div class="link link_fb"><i class="fab fa-facebook"></i></div></a>
-        <a href="https://www.youtube.com/channel/UCUjnD97wGFr6IRNG90q7QQg" target="_blank"><div class="link link_yt"><i class="fab fa-youtube"></i></i></div></a>
-        <a href="mailto:shoppingq@gmail.com" target="_blank"><div class="link link_mail"><i class="fas fa-envelope"></i></i></div></a>
+        <a href="https://www.facebook.com/shoppingq/" target="_blank">
+          <div class="link link_fb"><i class="fab fa-facebook"></i></div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCUjnD97wGFr6IRNG90q7QQg" target="_blank">
+          <div class="link link_yt"><i class="fab fa-youtube"></i></i></div>
+        </a>
+        <a href="mailto:shoppingq@gmail.com" target="_blank">
+          <div class="link link_mail"><i class="fas fa-envelope"></i></i></div>
+        </a>
       </div>
     </article>
   </main>
@@ -323,49 +491,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-  <script>
-    // 返回首頁
-    var scroll_top = 0;
-    var goTop = document.querySelector('.backtoTop');
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="js/all.js"></script>
 
-    window.onscroll=function(){
-        var scroll_top = window.scrollY;
-        console.log(scroll_top)
-
-        if (scroll_top >80) {
-            goTop.classList.remove('displayNone')
-        } else {
-            goTop.classList.add('displayNone')
-        }
-    }
-    
-    
-    /////// 分頁 ///////
-    var btns = document.querySelectorAll('.btn');
-    var contents = document.querySelectorAll('.content')
-
-    for (let i = 0; i < btns.length; i++) {
-      const index = i;
-      const btn = btns[i]
-      const content = contents[i]
-
-      btns[i].onclick = function () {
-        // console.log(index);
-
-        remove_active();
-
-        btn.classList.add('active');
-        content.classList.add('active');
-      }
-    }
-    function remove_active() {
-      for (let i = 0; i < btns.length; i++) {
-        btns[i].classList.remove('active');
-        contents[i].classList.remove('active');
-      }
-    }
-        /////// 分頁 ///////
-  </script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: unset;
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   -webkit-padding-start: unset;
@@ -22,6 +28,10 @@ ul {
 
 ul li {
   line-height: 2rem;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 .container {
@@ -180,15 +190,13 @@ ul li {
 }
 
 .tab .tab_contents .content::after {
-  content: "";
+  content: "©2021，此為學習作品，僅供學習作品展示";
   display: block;
   width: 100%;
-  height: 20px;
   background-color: #D8D584;
-}
-
-.tab .tab_contents .content .top {
-  padding: 20px;
+  padding: 6px 20px;
+  font-size: 12px;
+  text-align: center;
 }
 
 .tab .tab_contents .title {
@@ -342,6 +350,14 @@ ul li {
   }
 }
 
+.tab .tab_contents #skill .detail {
+  font-size: 12px;
+  color: #94902f;
+  list-style: square;
+  padding-left: 20px;
+  display: none;
+}
+
 .tab .tab_contents #skill small {
   color: #94902f;
 }
@@ -369,42 +385,17 @@ ul li {
   margin: 5px 6px 0 6px;
 }
 
-.tab .tab_contents .portfolio-boxs {
-  height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 20px 30px;
-}
-
-@media (min-width: 992px) {
-  .tab .tab_contents .portfolio-boxs {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .tab .tab_contents .portfolio-box {
   display: block;
-  width: 90%;
   height: 30vw;
-  background-size: cover;
-  background-position: center center;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(94, 94, 92, 0.2);
 }
 
 @media (min-width: 992px) {
   .tab .tab_contents .portfolio-box {
-    width: 48%;
     height: 15vw;
   }
 }
@@ -413,22 +404,27 @@ ul li {
   display: block;
 }
 
-.tab .tab_contents .portfolio-box .mask {
+.tab .tab_contents .portfolio-box::after {
+  content: "";
   background-color: rgba(0, 0, 0, 0);
   width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.tab .tab_contents .portfolio-box .mask:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+.tab .tab_contents .portfolio-box:hover::after {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .tab .tab_contents .portfolio-box .portfolio-text {
   position: absolute;
   left: 50%;
   top: 50%;
+  z-index: 3;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #fff;
@@ -436,11 +432,27 @@ ul li {
 }
 
 .tab .tab_contents .p-box1 {
-  background-image: url("../img/portfolio/doorsss.png");
+  background-image: url("../img/portfolio/layout/doorsss.png");
 }
 
 .tab .tab_contents .p-box2 {
-  background-image: url("../img/portfolio/truesoul.jpg");
+  background-image: url("../img/portfolio/layout/truesoul.jpg");
+}
+
+.tab .tab_contents .p-box3 {
+  background-image: url("../img/portfolio/layout/backstage.png");
+}
+
+.tab .tab_contents .p-box4 {
+  background-image: url("../img/portfolio/layout/perfume.png");
+}
+
+.tab .tab_contents .p-box5 {
+  background-image: url("../img/portfolio/layout/eCom.png");
+}
+
+.tab .tab_contents .p-box6 {
+  background-image: url("../img/portfolio/layout/more.png");
 }
 
 .tab .tab_contents .links {
@@ -496,10 +508,15 @@ ul li {
   background-color: #F9AC17;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .backtoTop {
+  display: none;
   width: 50px;
   height: 50px;
-  background-color: #94902f;
+  background-color: #D8D584;
   border-radius: 50%;
   color: aliceblue;
   font-size: 20px;
@@ -514,7 +531,7 @@ ul li {
 }
 
 .backtoTop:hover {
-  background-color: #494949;
+  background-color: #94902f;
   width: 55px;
   height: 55px;
   line-height: 55px;
@@ -522,5 +539,14 @@ ul li {
 
 .displayNone {
   display: none;
+}
+
+.bg-center {
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-deepblue {
+  background-color: #2C2F42;
 }
 /*# sourceMappingURL=index.css.map */
