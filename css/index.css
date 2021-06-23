@@ -455,6 +455,14 @@ p {
   background-image: url("../img/portfolio/layout/more.png");
 }
 
+.tab .tab_contents .p-box7 {
+  background-image: url("../img/portfolio/js/ajax.png");
+}
+
+.tab .tab_contents .p-box8 {
+  background-image: url("../img/portfolio/js/jsfinal.png");
+}
+
 .tab .tab_contents .links {
   width: 50px;
   height: 126px;
